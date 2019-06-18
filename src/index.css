@@ -1,13 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&display=swap');
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  height: 100vh;
+  font-family: 'Encode Sans Expanded', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+.home {
+    position: relative;
+}
+
+.homeImage img{
+    width: 100%;
+    height: 94vh;
+}
+.navbar{
+    background: #0f0c29;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.navbar-nav{
+    float: right;
+}
+
+.navbar-toggler-icon {
+    background-image: url(/images/toggler.png);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.title-all{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    color: white;
+}
+.title-work{
+    border-bottom: 1px solid white;
+}
+.social-all{
+   float: left;
+}
+.social-links{
+   display: inline;
+   padding : 0px 20px 0px 20px
+}
+.social-links a{
+    color: white;
+    font-size: 30px;
+}
+.social-links a:hover{
+    color: lightgreen
+}
+
+
+
+/*Projetcs Style*/
+.categoryTabs nav {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 20px
+}
+
+.categoryTabs nav a {
+    display: inline-block;
+    color: tomato
+}
+.project-section{
+    float: left;
+    width: 100%;
+}
+.project{
+    display: inline-block;
+    margin: 20px
+}
+/*CONTACT */
+
+.left-side{
+    border-right: 1px solid black;
+}
+.contact-section .left-side{
+    margin-top: 10%;
+}
+.contact-image-div img{
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.contact-details p{
+    margin-left: 15%;
+}
+
+.contact-section .right-side .title h1{
+    font-size: 60px;
+}
+.contact-section .right-side .title{
+    border-bottom: 2px solid black;
+}
+.contact-des{
+    margin-left: 30%
+}
+.contact-des li{
+    padding: 0px;
+}
+.contact-des i{
+font-size: 40px;
+}
+.contact-des h3{
+    font-size: 25px;
+}
+.contact-des .li a{
+    color: teal
+}
+/*HIRE Section*/
+.hire-section {
+    margin-top: 20px
+}
+.hire-section .hire-left-full {
+    margin-top: 10%;
+    text-align: left
+}
+.hire-section .hire-left-full h5{
+    padding-top: 25px;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+.hire-section .hire-left-full p{
+    font-size: 17px;
+    padding-top: 25px;
+}
+.hire-right-section{
+    background-color: #27221F;
+    color: white;
+    border-bottom: 1px solid white;
+}
+.hire-right-section h2{
+    margin-bottom: 40px;
+    float: left
+}
+.education{
+clear: both;
+}
+.education-section{
+    border-bottom: 1px solid white;
+    padding-bottom:30px 
+}
+/*SKILL SECTION*/
+.skill-section{
+    clear: both
+}
+.skill-section .skill-name {
+    float: left;
+    font-size: 20px;
+}
+.skill-progress{
 }
